@@ -1,0 +1,89 @@
+Fri Mar 22 13:06:35 1991  Norbert Kiesel  (norbert at haydn)
+
+	* Version 1.1 Patchlevel 5 released.
+
+	* Link rules for silly makes (GNU make dosen't need it!)
+
+	* Added index support {-x,+index} (Jim Penny <jpenny@ukma.uky.edu>)
+
+	* Added ``#line'' recognition to c++2latex.l
+
+Wed Mar 20 12:11:06 1991  Norbert Kiesel  (norbert at haydn)
+
+	* corrected typo in c++2latex.1
+
+Thu Oct  4 09:14:53 1990  Norbert Kiesel  (norbert at haydn)
+
+	* Version 1.1 Patchlevel 4 released.
+
+	* fixed bug in Makefile.
+
+	* Added ``#error'' recognition to c++2latex.l
+
+Tue Sep 11 13:51:03 1990  Norbert Kiesel  (norbert at haydn)
+
+	* Version 1.1 Patchlevel 3 released.
+
+	* changed '###' in definition section of c++2latex.l to '/* * */'
+
+Wed Aug  8 13:16:43 1990  Norbert Kiesel  (norbert at haydn)
+
+	* Version 1.1 Patchlevel 2 released.
+
+Tue May 29 14:50:37 1990  Norbert Kiesel  (norbert at haydn)
+
+	* changed __DATE__ and __TIME__ to ctime() to get program run time
+	  instead of program compile time.
+
+Wed Apr 25 10:53:05 1990  Norbert Kiesel  (norbert at rwthi3)
+
+	* Version 1.1 Patchlevel 1 released.
+
+	* If BEGIN (INITIAL) was done, the CPLUSPLUS state was
+	  forgotten. (Rein Tollevik <rein@ifi.uio.no>)
+
+	* The C++ comment style (//) is (again) recognized. (Rein Tollevik
+	  <rein@ifi.uio.no>)
+
+	* Return value from main(). (Rein Tollevik <rein@ifi.uio.no>)
+
+	* Backshlash characters in character constants corrected. (Rein
+	  Tollevik <rein@ifi.uio.no>)
+
+	* #pragma accepted as CPP directrive.  (Rein Tollevik
+	  <rein@ifi.uio.no> and Patrick Dussud <edsel!dussud>) 
+
+Mon Apr 23 09:53:23 1990  Norbert Kiesel  (norbert at rwthi3)
+
+	* Version 1.1 Patchlevel 0 released
+
+	* USE-NAME, ANSI-C and C-PLUSPLUS macros for input mode selection
+
+	* new option [-p,+c-plusplus] for C++ input selection
+
+	* allow whitespace in CPP-directrives
+
+	* leading whitespace in block comments and strings preserved
+
+	* "--" outputs "-{}-"
+
+	* strdup substituted by malloc/strcpy (seems to be more portable)
+
+Fri Apr  6 13:05:34 1990  Norbert Kiesel  (norbert at rwthi3)
+
+	* Version 1.0 Patchlevel 2 released
+	  Some minor bugs in c++2latex.l removed. Also print's #included
+	  fileames in string-font (def.: tt) (both <xx.h> and "xx.h").
+
+	* Version 1.0 Patchlevel 1 released
+	  It includes changes to c++2latex.l, version.c, a flexed version
+	  of c++2latex.l, a ChangeLog and the fancyheadings.sty from Piet
+	  van Oostrum.
+
+	* c++2latex.l: Some changes to the flex part (<,>,empty lines)
+
+Thu Apr  5 14:22:15 1990  Norbert Kiesel  (norbert at rwthi3)
+
+	* c++2latex.l: Inserted missing \\mbox{} in <BCOMMNET>"\n"
+
+

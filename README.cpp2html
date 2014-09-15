@@ -1,0 +1,111 @@
+This is a README file for C++2HTML v1.1.1 .
+
+c++2html program converts ANSI-C/C++ programs into HTML source .
+
+This program is derived from  Norbert Kiesel's c++2latex . Please
+read RAEDME.c++2latex for information about how to compile the
+program . NOTE : there is version 3.2 or more of C++2LaTeX , so 
+you probably will prefer it for c++->latex conversion . I started 
+with recent version because the last one defines .l file for each 
+language ( c c++ ...) , but I actually needed only c++ .
+
+
+There is no manual page yet , sorry .
+Below is a format and list of all valid options for c++2html
+
+FORMAT :
+ c++2html [option [option [...]] [input file name]
+DESCRIPTION :
+ Convert C++/C source to HTML formatted file .
+ If input file name is not specified , standard input is used .
+ If no output file name is not specified ( with  {-o,+output} option)
+ the standard output is used .
+ 
+CONVERSION FORMAT :
+ All files included in C++ source formated as a hyperlinks to
+                includes_html#file_name
+ Where includes_html is a index file name . It can be defined with  
+ {-I,+include-html} option , default is `includes.html' .
+ File_name is the included file name .
+
+ If {-l,+indent-links} is specified , all identifiers in the C++
+ program will be formatted as hyperlyns to
+                ident_html#identifier
+ Where  ident_html is a index file name . It can be defined with 
+ {-D,+ident-html} option , default is `ident.html' .
+ See options description for further information .
+
+OPTIONS :
+  {-a,+ansi-c} 
+       The input is an ANSI-C program. Default is C++, so don't give this
+       option for C++ programs and always give this option for ANSI-C pro-
+       grams.
+
+  {-c,+complete-file}
+       The output is enveloped in commands which produce a complete HTML 
+       source. 
+
+  {-h,+header}
+       Each page of output has a header giving the input file name and the
+       date the file was produced. This option implies the {-c,+complete-
+       file} option.
+
+  {-o,+output} path 
+       The output is written in the file pointed to by path.
+
+  {-C,+comment-tag} tag 
+       The comments are set in the given tag. Default is `EM'.
+
+  {-H,+header-tag} tag 
+       The headers are set in the given tag. Default is `KBD'.
+
+  {-K,+keyword-tag} tag 
+       The keywords are set in the given font. Default is `STRONG'.
+
+  {-P,+cpp-tag} tag
+       The preprocessor directives are set in the given tag. Default is
+       `STRONG'.
+
+  {-S,+string-tag} tag
+       The string and character constants are set in the given tag.
+       Default is `EM'.
+
+  {-O,+operator-tag} tag
+       The operators are set in the given tag.
+       Default is `STRONG'.
+
+  {-T,+tabstop} wide
+       The wide of tabs is wide. Default is `8'.
+
+  {-V,+version}
+       Prints the version number on stderr.
+
+  {-x,+index}
+       Creates index commands for all identifiers.
+       NOT IMPLEMENTED YET ! 
+
+  {-l,+indent-links}
+       Whether to mark all identifiers as hyper-links . 
+       Default is `false' . 
+
+  {-I,+include-html}
+       Set file name for HTML index for all included files . 
+       Default is `includes.html'
+
+  {-D,+ident-html}
+       Set file name for HTML index for all  identifiers.
+       default is `ident.html'
+
+POINTERS :
+ ftp://tochna.technion.ac.il/pub/staff/dimka/c++2html.html
+ ftp://tochna.technion.ac.il/pub/staff/dimka/c++2html/c++2html.shar.gz
+ 
+ Any comments , bug reports and suggestions are welcome .
+
+AUTHOR :
+ Dimitry Kloper <dimka@tochna.technion.ac.il>
+
+
+
+
+

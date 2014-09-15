@@ -1,0 +1,21 @@
+This is a README file for C++2HTML v1.1.1 for OS/2.
+
+ This is a port of c++2html to OS/2 using emx0.9c.
+
+ It has been renamed to cpp2html, because some OS/2 shells have problems
+parsing the plus signs in c++2html.
+
+ You'll need flex to compile the code, but the binaries are included.
+ You'll also need a make program.
+
+ No other changes were needed.
+
+
+POINTERS :
+ http://tau.uab.es/~rogersm/hacks/c++2html.html
+ 
+ Any comments, bug reports and suggestions are welcome.
+
+AUTHOR :
+ Roger Sen Montero <rogersm@tau.uab.es>
+
